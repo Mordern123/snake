@@ -5,6 +5,7 @@ import { GRID_SIZE } from '../constants';
 const Map = ({ snake, food, isStart, isGameOver, handleOnGameStart }) => {
   const squares = Array(GRID_SIZE).fill(0).map((_, index) => index);
   const { head, body } = snake;
+  console.log(body)
   return (
     <div className="main-map relative mb-3">
       {
@@ -13,7 +14,7 @@ const Map = ({ snake, food, isStart, isGameOver, handleOnGameStart }) => {
           const isHead = head.x === column && head.y === row;
           const isFood = food.x === column && food.y === row;
           return (
-            <div className={isSnake?'bg-[#ffffff]':'bg-slate-800'} key={`${row}_${column}`} data-x={column} data-y={row}>
+            <div style={{background: isSnake?'#ffffff':'#161616'}} key={`${row}_${column}`} data-x={column} data-y={row}>
               { isHead && (<div className='bg-lime-300 w-full h-full rounded-full'></div>) }
               { isFood && (<div className='food bg-red-700 w-full h-full rounded-full'></div>) }
             </div>

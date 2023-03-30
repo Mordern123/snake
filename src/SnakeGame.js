@@ -91,10 +91,6 @@ const SankeGame = () => {
   };
 
   useEffect(() => {
-    console.log(maxScore);
-  })
-
-  useEffect(() => {
     if(isGameOver) {
       setIsStart(false);
       if(score > maxScore) {
@@ -141,7 +137,7 @@ const SankeGame = () => {
       setScore((score) => score = score + 1);
       setSnake((snake) => ({
         ...snake,
-        curLength: snake.curLength++,
+        curLength: snake.curLength + 1,
         speed: Math.max((snake.speed - SNAKE_DELTA_SPEED), SNAKE_LIMITED_SPEED),
       }));
     }
