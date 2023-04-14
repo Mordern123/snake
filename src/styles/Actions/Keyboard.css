@@ -1,27 +1,26 @@
 .keyboard {
-    display: inline-grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 4px;
-    
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 4px;
 }
 
 .keyboard_up {
-    grid-column-start: 2;
-    grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-start: 1;
 }
 .keyboard_left {
-    transform: rotate(-90deg);
-    grid-column-start: 1;
-    grid-row-start: 2;
+  transform: rotate(-90deg);
+  grid-column-start: 1;
+  grid-row-start: 2;
 }
 .keyboard_down {
-    transform: rotate(180deg);
-    grid-column-start: 2;
-    grid-row-start: 2;
+  transform: rotate(180deg);
+  grid-column-start: 2;
+  grid-row-start: 2;
 }
 .keyboard_right {
-    transform: rotate(90deg);
-    grid-column-start: 3;
-    grid-row-start: 2;
+  transform: rotate(90deg);
+  grid-column-start: 3;
+  grid-row-start: 2;
 }

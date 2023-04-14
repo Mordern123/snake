@@ -1,27 +1,27 @@
 .main-map {
-    width: min(calc(100vw - 16px), 584px);
-    height: min(calc(100vw - 16px), 584px);
-    display: grid;
-    grid-template-columns: repeat(30, 1fr);
-    grid-template-rows: repeat(30, 1fr);
-    grid-gap: 2px;
+  width: min(calc(100vw - 16px), 584px);
+  height: min(calc(100vw - 16px), 584px);
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  grid-template-rows: repeat(30, 1fr);
+  grid-gap: 2px;
 }
 
 .food {
-    animation: food 2s ease-in-out infinite alternate;
+  animation: food 2s ease-in-out infinite alternate;
 }
 
 @keyframes food {
-    0% {
-        -moz-box-shadow: 0 0 0 0 red;
-        box-shadow: 0 0 0 0 red;
-    }
-    70% {
-        -moz-box-shadow: 0 0 0 20px rgba(204,169,44, 0);
-        box-shadow: 0 0 0 20px rgba(204,169,44, 0);
-    }
-    100% {
-        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
-        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
-    }
+  0% {
+    -moz-box-shadow: 0 0 0 0 red;
+    box-shadow: 0 0 0 0 red;
   }
+  70% {
+    -moz-box-shadow: 0 0 0 20px rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 20px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
