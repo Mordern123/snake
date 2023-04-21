@@ -1,7 +1,5 @@
 import React from "react";
 
-import { ARROW_UP, ARROW_DOWN, ARROW_LEFT, ARROW_RIGHT } from "../../constants";
-
 const PauseButton = ({ handleOnGamePause, isPause }) => {
   return (
     <div
